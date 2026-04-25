@@ -5,19 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FULL VIDEO VIRAL TERBARU</title>
 
-    <style>
-        body { background: #000; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-        .player-card { width: 95%; max-width: 480px; background: #111; border-radius: 12px; overflow: hidden; border: 1px solid #222; box-shadow: 0 15px 35px rgba(0,0,0,0.8); }
-        .video-container { position: relative; width: 100%; cursor: pointer; background: #000; }
-        .video-container img { width: 100%; display: block; opacity: 0.6; transition: 0.3s; }
-        .video-container:hover img { opacity: 0.8; }
-        .play-overlay { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 75px; height: 75px; background: rgba(255, 0, 0, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 25px rgba(255,0,0,0.5); }
-        .play-icon { width: 0; height: 0; border-top: 18px solid transparent; border-bottom: 18px solid transparent; border-left: 28px solid white; margin-left: 6px; }
-        .video-info { padding: 18px; }
-        .video-title { font-size: 17px; font-weight: bold; line-height: 1.4; margin-bottom: 8px; color: #eee; }
-        .video-stats { font-size: 13px; color: #888; display: flex; align-items: center; gap: 10px; }
-        .live-tag { background: #ff0000; color: white; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 11px; text-transform: uppercase; }
-    </style>
+<style>
+    body { background: #000; color: #fff; font-family: sans-serif; margin: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+    .player-card { width: 90%; max-width: 400px; text-align: center; }
+    
+    /* INI KUNCI BIAR TRANSPARAN */
+    .video-container { 
+        position: relative; 
+        width: 100%; 
+        height: 220px; 
+        background: transparent; /* Background bening */
+        cursor: pointer; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .play-overlay { 
+        width: 80px; 
+        height: 80px; 
+        background: rgba(255, 0, 0, 0.9); 
+        border-radius: 50%; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        box-shadow: 0 0 30px rgba(255,0,0,0.4);
+    }
+    
+    .play-icon { width: 0; height: 0; border-top: 20px solid transparent; border-bottom: 20px solid transparent; border-left: 30px solid white; margin-left: 8px; }
+    
+    .video-info { margin-top: 20px; }
+    .video-title { font-size: 18px; font-weight: bold; margin-bottom: 8px; }
+    .video-stats { font-size: 13px; color: #888; }
+</style>
+
 </head>
 <body>
 
